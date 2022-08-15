@@ -1,7 +1,7 @@
 import { URLSearchParams } from "url";
 import { BaseController } from "./base.controller.js";
 const matchApiSchema = require('api-contract-validator').jestPlugin;
-const apiDefinitionsPath = './App.yaml';
+const apiDefinitionsPath = './swagger.yaml';
 matchApiSchema({ apiDefinitionsPath });
 
 class PetController extends BaseController {
